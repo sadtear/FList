@@ -21,7 +21,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   public: `./public`,
   // 网站标题，标题颜色可在 src/client/css/main.css 中修改
-  title: 'FList',
+  title: '文件周转',
   // 网站的简介，有助于搜索引擎收录
   description: 'FList - 将 GitHub Releases 以类似网盘的形式展示在网页上，方便用户下载开源软件。 支持视频、音频、图片、PDF 等文件的在线预览。',
   // 页面 <head> 标签内添加的额外标签。 不要修改/logo.png可以替换掉这个文件，删除logo.png会导致构建出错。
@@ -37,9 +37,9 @@ export default defineUserConfig({
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
-        user: "jianjianai",
+        user: "sadtear",
         // 仓库所有者的仓库名
-        repository: "KnapsackToGo4",
+        repository: "FList",
         // github 授权 Token, process.env.xxx  xxx 是环境变量名称。可以通过设置 githubToken 环境变量来配置
         authorizationToken: process.env.githubToken,
         // 分页大小，不懂得话就当作取最新的多少个标签吧。
